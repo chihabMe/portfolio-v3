@@ -34,15 +34,15 @@ export default function Home() {
 </svg>
       </a>
     </div>
-    <Header/>
+        <Header/>
 
-    <Hero/>
+        <Hero/>
       <About/>
       <Skils/>
       <Projects/>
 
     </main>
-    <footer className={styles.footer}>
+    <footer id='footer' className={styles.footer}>
 <p className={styles.chihab}> all rights reserved for chihab hhh &copy; 2022</p>
     </footer>
     </div>

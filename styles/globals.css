@@ -25,6 +25,9 @@ a {
   width: 100%;
   max-width: 1450px;
   margin: 0 auto;
+  scroll-snap-type: both mandatory;
+  height:100vh ;  
+  overflow-y: scroll;
 }
 html.transition,
 html.transition *,
@@ -83,4 +86,50 @@ html[theme='light']{
 
   }
   
+}
+#home{
+  margin: 0;
+  width: 100%;
+  margin-top: 3rem;
+  height: 100vh;
+  scroll-snap-align: start;
+
+}
+#skills{
+  margin: 0;
+
+  margin-top: 3rem;
+  height: unset;
+  height: 100vh;
+  scroll-snap-align: start;
+
+}
+#projects{
+  margin: 0;
+  scroll-snap-align: start;
+
+  margin-top: 3rem;
+  height: unset;
+  padding:0;
+min-height: 100vh;
+}
+#about{
+  margin: 0;
+  padding:0;
+  margin-top: 3rem;
+  height: unset;
+  height: 100vh;
+  scroll-snap-align: start;
+
+
+}
+
+
+#footer{
+  scroll-snap-align: start;
+  height: 100vh;
+
+}
+#header{
+  scroll-snap-align: start;
 }
