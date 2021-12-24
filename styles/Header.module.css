@@ -1,0 +1,194 @@
+
+.header{
+	width:100%;
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	height:80px;
+	padding:0 2rem;
+
+}
+
+.header_left{
+	display:flex;
+	align-items:center;
+	gap:10px
+}
+.header_logo{
+	width:3.5rem;
+	height:3.5rem
+}
+.header_logo_text{
+	color:var(--text-color);
+	font-size:1rem;
+}
+.header_menu{
+	width:100%;
+	display:flex;
+	gap:20px;
+	list-style:none;
+	justify-content:center;
+
+
+}
+.header_menu_item_link{
+	font-size:1.3rem ;
+	padding: 0.5rem 1.2rem;
+	cursor:pointer;
+	transition:all 0.3s ease;
+	border-radius:5%;
+	color:var(--text-color);
+}
+.header_menu_item_link:hover{
+	background-color:var(--sec-color);
+	color:var(--primery-color);
+	 
+	 }
+
+.contect_btn{
+	width:8rem;
+	height:2.5rem;
+	cursor:pointer;
+	border:none;
+	color:var(--primery-color);
+	background-color:var(--sec-color);
+	font-size:1rem;
+	transition : all 0.4s ease;
+}
+.contect_btn:hover{
+	color:var(--text-color);
+	background-color:transparent;
+	border: 1px solid 	var(--sec-color);
+;
+}
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width:5rem;
+  height: 2rem;
+  
+
+
+}
+
+/* Hide default HTML checkbox */
+.check_box {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+border-radius:20px;
+position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: wheat;
+  -webkit-transition: .4s;
+  transition: .4s;
+
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 2rem;
+  width: 2.2rem;
+  left: 0.4rem;
+  bottom: 50%;
+  transform: translateY(50%);
+  background-color: var(--primery-color);
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 50%;
+}
+input:checked + .slider {
+  background-color: #2196F3;
+
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px) translateY(50%);
+  -ms-transform: translateX(26px) translateY(50%);
+  transform: translateX(26px) translateY(50%);
+
+}
+
+.menu_togg_btn{
+	position: absolute ;
+	display: none;
+	width: 4rem;
+	height: 4rem;
+	background:transparent;
+	outline: none;
+	cursor: pointer;
+	border:none;
+	position: absolute;
+	top: 2rem;
+	left: 2rem;	
+	transition:all 0.4s ease;
+	z-index: 30;
+	transition:all 0.4s ease;
+
+}
+.menu_togg_btn.active{
+
+	top: 2rem;
+	left: 70%;	
+	transform: translateX(-100%);
+}
+
+.menu_togg_btn > svg{
+	width: 100%;
+	height: 100%;
+	color: var(--white);
+}
+
+
+@media (max-width:700px) {
+	.menu_togg_btn{
+		display: block;
+	}
+	.header{
+		justify-content: flex-end;
+		gap: 2rem;
+		position: fixed;
+		left: 0;
+		top: 0;
+		z-index: 15;
+		background-color: var(--primery-color);
+
+	}
+	.header_menu{
+		background-color: var(--primery-color);
+		height: 100vh;
+		width: 70%;
+		position: fixed;
+		left: -100%;
+		top: 0;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: center;
+		gap: 2rem;
+		padding-top: 5rem;
+		z-index: 20;
+		transition:all 0.4s ease;
+}
+.header_menu_item_link{
+	font-size: 1.7rem;
+}
+	}
+.header_menu.active{
+	left: 0;
+}
