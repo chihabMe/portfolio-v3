@@ -4,10 +4,11 @@
   --sec-color:#21E6C1;
   --white:white
 }
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,700;1,400&family=Pushster&family=Roboto:wght@500;700&display=swap');
 
 body {
   background-color:var(--primery-color);
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  font-family:   'Roboto', sans-serif, cursive, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 

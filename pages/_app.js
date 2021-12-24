@@ -1,9 +1,8 @@
 import '../styles/globals.css'
-
 function MyApp({ Component, pageProps }) {
   return (
-    <div className='container'>
-        <Component {...pageProps} />
+    <div  id='container' className='container'>
+        <Component {...pageProps}  />
   </div>
   )
 }

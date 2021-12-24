@@ -21,6 +21,7 @@
 .header_logo_text{
 	color:var(--text-color);
 	font-size:1rem;
+	font-family: 'Pushster';
 }
 .header_menu{
 	width:100%;
