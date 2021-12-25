@@ -11,7 +11,7 @@ const Project = ({image,title,tags,des,id}) => {
             <div className={styles.shadow}>
                 <p className={styles.shadow_des}>{des}</p>
             </div>
-            <img className={styles.project_img} src={image ? image :'https://picsum.photos/450/250'} />
+            <img loading='lazy' className={styles.project_img} src={image ? image :'https://picsum.photos/450/250'} />
             <h3 className={styles.project_title}>{title}</h3>
             <p className={styles.project_short_des}>{shortDes(des)}</p>
             <div className={styles.project_tags}>
