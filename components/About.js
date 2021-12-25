@@ -1,8 +1,9 @@
 import React from 'react'
 import styles from '../styles/Intro.module.css'
 const About = () => {
+
     return (
-        <section className={styles.about} id='about'>
+        <section  className={styles.about} id='about'>
             <div className={styles.about_content}>
                 <h1 className={styles.about_title}>
                 About me 

@@ -13,7 +13,7 @@ const Projects = () => {
             {
                 title:'hotel web site ',
                 tags:['django','python','css','javascript','html'],
-                des:' i buid it using django for backend and vanilaJs with ajax  ',
+                des:' i buit it using django for backend and vanilaJs with ajax  ',
                 id:Math.floor(Math.random()*2000+1)
             },
             {
@@ -25,7 +25,7 @@ const Projects = () => {
             {
                 title:'live video chat application',
                 tags:[,'nodeJs','css','javascript'],
-                des:'i build it using nodeJs for the backend and reactJs for the frontend ',
+                des:'i built it using nodeJs for the backend and reactJs for the frontend ',
                 id:Math.floor(Math.random()*2000+1)
             },
             
